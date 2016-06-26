@@ -6,4 +6,4 @@ Syntax: `%deport id` where ID is the ID of the person you want to ban
 
 Deporting someone sets their status in the citizen database to `deported`
 
-{command source](https://github.com/Project-Iktoslavistan/iktobot/blob/master/register.js)
+[command source](https://github.com/Project-Iktoslavistan/iktobot/blob/master/register.js)
