@@ -12,7 +12,7 @@ Citizens have the following attributes:
 * id:             discord user ID
 * address:        randomly generated address
 * employment:     job, `unemployed` by default
-* birthday:       date the person joined
+* birthday:       amount of milliseconds someone joined after the start of the current 30 day period
 * sex:            `m` or `f`: male or female, can't be changed
 * status: 	  possible values: alive, deceased, imprisoned, deported
 
