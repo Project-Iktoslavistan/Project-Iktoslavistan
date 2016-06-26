@@ -17,7 +17,7 @@ Citizens have the following attributes:
 
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
 
-`mysql> DESCRIBE citizens;
+```mysql> DESCRIBE citizens;
 +------------+--------------+------+-----+---------+-------+
 | Field      | Type         | Null | Key | Default | Extra |
 +------------+--------------+------+-----+---------+-------+
@@ -29,7 +29,7 @@ if a player leaves the server, that counts emigration and their records are kept
 | age        | varchar(4)   | YES  |     | NULL    |       |
 | profession | varchar(100) | YES  |     | NULL    |       |
 +------------+--------------+------+-----+---------+-------+
-`
+```
 
 # Companies
 Companies have the following attributes:
