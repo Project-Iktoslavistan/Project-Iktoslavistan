@@ -14,7 +14,7 @@ Citizens have the following attributes:
 * employment:     job, `unemployed` by default
 * birthday:       date the person joined
 * sex:            `m` or `f`: male or female, can't be changed
-
+* status: 	  possible values: alive, deceased, imprisoned, deported
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
 
 mysql> DESCRIBE citizens;
@@ -28,6 +28,7 @@ mysql> DESCRIBE citizens;
 | id         | varchar(20)  | YES  |     | NULL    |       |
 | age        | varchar(4)   | YES  |     | NULL    |       |
 | profession | varchar(100) | YES  |     | NULL    |       |
+| status     | varchar(20)  | YES  |     | NULL    |       |
 
 
 # Companies
