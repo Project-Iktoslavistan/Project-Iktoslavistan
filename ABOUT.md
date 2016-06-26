@@ -15,6 +15,7 @@ Citizens have the following attributes:
 * birthday:       date the person joined
 * sex:            `m` or `f`: male or female, can't be changed
 * status: 	  possible values: alive, deceased, imprisoned, deported
+
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
 
 mysql> DESCRIBE citizens;
