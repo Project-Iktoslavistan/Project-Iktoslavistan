@@ -13,6 +13,7 @@ Citizens have the following attributes:
 * address:        randomly generated address
 * employment:     job, `unemployed` by default
 * birthday:       date the person joined
+* sex:            `m` or `f`: male or female, can't be changed
 
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
 
