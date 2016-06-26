@@ -1,5 +1,5 @@
 # Databases and tables
-We store the data in databases. There are a few different tables:
+We store the data in MySQL databases. There are a few different tables:
 * citizens
 * companies 
 * criminal records
@@ -13,8 +13,22 @@ Citizens have the following attributes:
 * address:        randomly generated address
 * employment:     job, `unemployed` by default
 * birthday:       date the person joined
+* sex:            `m` or `f`: male or female, can't be changed
 
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
+
+mysql> DESCRIBE citizens;
+
+| Field      | Type         | Null | Key | Default | Extra |
+|:-----------|:-------------|:-----|:----|:--------|:------|:
+| name       | varchar(64)  | YES  |     | NULL    |       |
+| sex        | char(1)      | YES  |     | NULL    |       |
+| birthday   | varchar(42)  | YES  |     | NULL    |       |
+| address    | varchar(100) | YES  |     | NULL    |       |
+| id         | varchar(20)  | YES  |     | NULL    |       |
+| age        | varchar(4)   | YES  |     | NULL    |       |
+| profession | varchar(100) | YES  |     | NULL    |       |
+
 
 # Companies
 Companies have the following attributes:
