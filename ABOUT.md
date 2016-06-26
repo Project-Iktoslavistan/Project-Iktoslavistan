@@ -16,6 +16,7 @@ Citizens have the following attributes:
 * sex:            `m` or `f`: male or female, can't be changed
 
 if a player leaves the server, that counts emigration and their records are kept for 5 months (5 in-world years)
+
 `mysql> DESCRIBE citizens;
 +------------+--------------+------+-----+---------+-------+
 | Field      | Type         | Null | Key | Default | Extra |
