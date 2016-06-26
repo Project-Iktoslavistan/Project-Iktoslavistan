@@ -21,3 +21,11 @@ Companies have the following attributes:
 * owner(s): IDs of the people who own the company
 * name: name of the company
 * employee(s): IDs of the people employed by the company
+
+if a player is in the employee(s) field of a company, but in the citizen table their profession is still `unemployed` they have to pay a small fee 
+
+# Criminal records
+List of crimes committed
+
+# Medical records
+List of all medical issues the character had
