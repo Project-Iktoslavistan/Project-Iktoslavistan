@@ -1,6 +1,7 @@
 # Databases and tables
 We store the data in MySQL databases. There are a few different tables:
 * citizens
+* time
 * companies 
 * criminal records
 * medical records
@@ -30,6 +31,15 @@ mysql> DESCRIBE citizens;
 | age        | varchar(4)   | YES  |     | NULL    |       |
 | profession | varchar(100) | YES  |     | NULL    |       |
 | status     | varchar(20)  | YES  |     | NULL    |       |
+
+# Time
+This table contains the absolute Iktoslavistanic epoch (since the unix epoch), what year it is (a year is a period of 30 real-life days) and the relative epoch (amount of milliseconds inbetween the current period of 30 days and the unix epoch)
+
+| Field     | Type                | Null | Key | Default | Extra |
+|:----------|:--------------------|:-----|:----|:--------|:------|;
+| ab_epoch  | bigint(20) unsigned | YES  |     | NULL    |       |
+| rel_epoch | bigint(20) unsigned | YES  |     | NULL    |       |
+| year      | int(10) unsigned    | YES  |     | NULL    |       |
 
 
 # Companies
